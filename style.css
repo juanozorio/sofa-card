@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root, button {
+    font-size: 62,5%;
+    color: var(--midnight-blue);
+    font-family: 'Crimson Pro', serif;
+    --light-lilac: #D9CDF7;
+    --midnight-blue: #271A45;
+}
+
+body {
+    background-color: var(--light-lilac);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sofa {
+    width: 44.9rem;
+    height: 22.2rem;
+}
+
+main > div:first-child {
+    position: relative;
+}
+
+main > div > .icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+main > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1.25rem;
+}
+
+main > div:last-child > p:nth-child(2) {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+main > div:last-child > p:last-child {
+    opacity: 0.67;
+}
+
+button {
+    font-size: 0.75rem;
+    padding: 8px 16px;
+    border: 0.5px solid #271A45;
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+}
